@@ -1,0 +1,149 @@
+/* Dashboard Page Styles - Professional Enhancements */
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.input-group label i {
+  margin-right: 0.5rem;
+  color: #6366f1;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #6366f1;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+  transform: translateY(-2px);
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem;
+  border-radius: 16px;
+  gap: 1rem;
+}
+
+.book-header h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.book-author {
+  font-weight: 500;
+  color: #6366f1;
+  font-size: 1.1rem;
+}
+
+.book-desc {
+  color: var(--text-secondary);
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.book-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.book-actions button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.book-actions button:first-child {
+  background: #10b981;
+  color: white;
+}
+
+.book-actions button.btn-danger {
+  background: #ef4444;
+  color: white;
+}
+
+.book-actions button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.search-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+}
+
+#userWelcome {
+  text-align: center;
+}
+
+#userWelcome h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#userInfo {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+/* Grid overrides */
+@media (max-width: 768px) {
+  .book {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .book-actions {
+    justify-content: center;
+  }
+}
+

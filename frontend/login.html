@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - BookVerse</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="auth-nav-buttons">
+    <a href="land.html" class="btn-nav" title="Home"><i class="fas fa-home"></i></a>
+  </div>
+  <div class="main-content">
+    <div class="login-container card">
+      <div class="logo">
+        <i class="fas fa-rocket"></i>
+        <h1>BookVerse</h1>
+      </div>
+      <h2>Welcome Back</h2>
+      <p class="subtitle">Please sign in to your account</p>
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="email"><i class="fas fa-envelope"></i> Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required >
+        </div>
+        <div class="input-group">
+          <label for="password"><i class="fas fa-lock"></i> Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required >
+        </div>
+        <div class="form-options">
+          <a href="#" id="forgotPassword">Forgot Password?</a>
+        </div>
+        <div id="errorMessage" class="error-message" role="alert"></div>
+        <button type="submit">
+          <span class="btn-text" >Login</span>
+          <div class="loader"></div>
+        </button>
+      </form>
+      <p class="signup-link">Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>
+

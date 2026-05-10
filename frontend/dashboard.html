@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - BookVerse</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <nav class="nav-bar">
+    <a href="land.html" class="nav-home"><i class="fas fa-home"></i> BookVerse</a>
+    <div class="nav-buttons">
+      <button onclick="history.back()" class="btn-nav"><i class="fas fa-arrow-left"></i> Back</button>
+      <button onclick="logout()" class="btn-nav" style="background: #ef4444;"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </div>
+  </nav>
+  <div class="main-content">
+    <div id="userWelcome" class="card">
+      <h1><i class="fas fa-user-circle"></i> Welcome Back!</h1>
+      <p id="userInfo">Loading...</p>
+    </div>
+
+    <div class="upload-section card">
+      <h2><i class="fas fa-upload"></i> Upload New Book</h2>
+      <form id="uploadForm">
+        <div class="input-group">
+          <label><i class="fas fa-heading"></i> Title</label>
+          <input id="title" type="text" placeholder="Enter book title" required>
+        </div>
+        <div class="input-group">
+          <label><i class="fas fa-user"></i> Author</label>
+          <input id="author" type="text" placeholder="Enter author name" required>
+        </div>
+        <div class="input-group">
+          <label><i class="fas fa-align-left"></i> Description</label>
+          <textarea id="description" placeholder="Brief description" rows="3"></textarea>
+        </div>
+        <button type="submit"><i class="fas fa-paper-plane"></i> Upload Book</button>
+      </form>
+    </div>
+
+    <div class="books-section card">
+      <h2><i class="fas fa-book"></i> Your Uploaded Books</h2>
+      <div id="books" class="grid"></div>
+    </div>
+
+    <div class="searches-section card">
+      <h2><i class="fas fa-history"></i> Previous Searches</h2>
+      <div id="searches"></div>
+    </div>
+    
+    <script src="dashboard.js"></script>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - BookVerse</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="auth-nav-buttons">
+    <a href="land.html" class="btn-nav" title="Home"><i class="fas fa-home"></i></a>
+  </div>
+  <div class="main-content">
+    <div class="admin-container card">
+      <div class="logo">
+        <i class="fas fa-cogs"></i>
+        <h1>BookVerse Admin</h1>
+      </div>
+      <h2>Manage Books</h2>
+      <p class="subtitle">Add, edit, and manage book previews</p>
+      
+      <!-- Add Book Form -->
+      <form id="addBookForm" class="form-section">
+        <div class="input-group">
+          <label for="title"><i class="fas fa-book"></i> Title</label>
+          <input type="text" id="title" placeholder="Book title" required>
+        </div>
+        <div class="input-group">
+          <label for="author"><i class="fas fa-user"></i> Author</label>
+          <input type="text" id="author" placeholder="Author name" required>
+        </div>
+        <div class="input-group">
+          <label for="genre"><i class="fas fa-tag"></i> Genre</label>
+          <input type="text" id="genre" placeholder="Genre (e.g., Fiction)">
+        </div>
+        <div class="input-group">
+          <label for="cover"><i class="fas fa-image"></i> Cover Image URL</label>
+          <input type="url" id="cover" placeholder="https://example.com/cover.jpg">
+        </div>
+        <div id="formError" class="error-message"></div>
+        <button type="submit" class="btn-primary">
+          <span class="btn-text">Add Book</span>
+          <div class="loader"></div>
+        </button>
+      </form>
+
+      <!-- Search & Stats -->
+      <div class="admin-controls">
+        <div class="input-group">
+          <label><i class="fas fa-search"></i> Search Books</label>
+          <input type="text" id="searchBooks" placeholder="Search by title or author...">
+        </div>
+        <div class="stats">
+          <span class="stat"><i class="fas fa-book"></i> <span id="bookCount">0</span> Books</span>
+        </div>
+      </div>
+
+      <!-- Books Grid -->
+      <h3>Book Library</h3>
+      <div id="bookList" class="books-grid"></div>
+    </div>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>

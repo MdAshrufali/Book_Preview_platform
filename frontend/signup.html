@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - BookVerse</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="auth-nav-buttons">
+    <a href="land.html" class="btn-nav" title="Home"><i class="fas fa-home"></i></a>
+  </div>
+  <div class="main-content">
+    <div class="signup-container card">
+      <div class="logo">
+        <i class="fas fa-user-plus"></i>
+        <h1>BookVerse</h1>
+      </div>
+      <h2>Create Your Account</h2>
+      <p class="subtitle">Get started with your free account</p>
+      <form id="signupForm">
+        <div class="input-group">
+          <label for="name"><i class="fas fa-user"></i> Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="input-group">
+          <label for="email"><i class="fas fa-envelope"></i> Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="input-group">
+          <label for="password"><i class="fas fa-lock"></i> Password</label>
+          <input type="password" id="password" placeholder="Create a password" required>
+        </div>
+       
+        
+        
+        <button type="submit">
+          <a href="login.html" class="btn-text">Create Account</span>
+          <div class="loader"></div>
+        </button>
+      </form>
+      <p class="login-link">Already have an account? <a href="login.html">Sign in</a></p>
+    </div>
+  </div>
+  <script src="signup.js"></script>
+</body>
+</html>
+
