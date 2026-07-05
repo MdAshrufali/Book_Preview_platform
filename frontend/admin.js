@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.removeItem('token');
         localStorage.removeItem('userRole');
         localStorage.removeItem('user');
-        window.location.href = 'land.html';
+        window.location.href = 'index.html';
       }
     };
     nav.appendChild(logoutBtn);

@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function logout() {
   localStorage.removeItem('user');
   localStorage.removeItem('userRole');
-  window.location.href = 'land.html';
+  window.location.href = 'index.html';
 }
 
 function deleteBook(userEmail, bookId) {

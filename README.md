@@ -11,7 +11,7 @@ A simple web application repository containing a static frontend and a backend d
 
 The frontend directory contains the client-facing pages and assets:
 
-- `land.html` / `landing.css` / `landing.js` - landing page
+- `index.html` / `landing.css` / `landing.js` - landing page
 - `login.html` / `login.css` / `login.js` - login page
 - `signup.html` / `signup.css` / `signup.js` - signup page
 - `dashboard.html` / `dashboard.css` / `dashboard.js` - dashboard page
